@@ -30,8 +30,22 @@ module.exports = class extends Generator {
 				type: "input",
 				name: "packages",
 				message:
-					"What SMA packages do you want installed (comma-separated)?",
+					"What SMA packages do you want installed? (comma-separated)",
 				default: "@magikcraft/mct1"
+			},
+			{
+				type: "input",
+				name: "worlds",
+				message:
+					"What world definitions do you want installed? (comma-separated URLs)",
+				default: ""
+			},
+			{
+				type: "input",
+				name: "javaPlugins",
+				message:
+					"What Java plugins do you want installed? (comma-separated)",
+				default: ""
 			}
 		];
 
@@ -52,7 +66,9 @@ module.exports = class extends Generator {
 			smaServer: {
 				dockerTag: "latest",
 				port: this.props.port,
-				serverName: this.props.serverName
+				serverName: this.props.serverName,
+				worlds: this.props.worlds.split(""),
+				javaPlugins: this.props.javaPlugins.split("")
 			}
 		});
 	}
