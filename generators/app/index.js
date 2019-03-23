@@ -63,7 +63,7 @@ module.exports = class extends Generator {
 			keywords: "scriptcraft, scriptcraft-sma, server",
 			author: "",
 			license: "ISC",
-			smaServer: {
+			smaServerConfig: {
 				dockerTag: "latest",
 				port: this.props.port,
 				serverName: this.props.serverName,
