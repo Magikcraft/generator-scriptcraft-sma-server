@@ -1,5 +1,5 @@
 {
-	"name": "generator-scriptcraft-sma-server",
+	"name": "generator-sma-server",
 	"version": "0.0.3",
 	"description": "Generate a Scriptcraft SMA server configuration",
 	"homepage": "https://github.com/Magikcraft",
@@ -71,6 +71,6 @@
 		"pretest": "eslint .",
 		"test": "jest"
 	},
-	"repository": "Magikcraft/generator-scriptcraft-sma-server",
+	"repository": "Magikcraft/generator-sma-server",
 	"license": "Apache-2.0"
 }
