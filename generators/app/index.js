@@ -60,7 +60,7 @@ module.exports = class extends Generator {
 			name: this.props.serverName,
 			version: "1.0.0",
 			description: this.props.description,
-			keywords: "scriptcraft, scriptcraft-sma, server",
+			keywords: ["scriptcraft", "scriptcraft-sma", "server"],
 			author: "",
 			license: "ISC",
 			smaServerConfig: {
