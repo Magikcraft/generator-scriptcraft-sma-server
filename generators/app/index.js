@@ -56,6 +56,10 @@ module.exports = class extends Generator {
 	}
 
 	writing() {
+		this.fs.copy(
+			this.templatePath("gitignore"),
+			this.destinationPath(".gitignore")
+		);
 		this.fs.extendJSON(this.destinationPath("package.json"), {
 			name: this.props.serverName,
 			version: "1.0.0",

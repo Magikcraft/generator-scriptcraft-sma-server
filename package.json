@@ -1,6 +1,6 @@
 {
 	"name": "generator-sma-server",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Generate a Scriptcraft SMA server configuration",
 	"homepage": "https://github.com/Magikcraft",
 	"author": {
