@@ -71,8 +71,8 @@ module.exports = class extends Generator {
 				dockerTag: "latest",
 				port: this.props.port,
 				serverName: this.props.serverName,
-				worlds: this.props.worlds.map((w, i) => ({
-					url: w,
+				worlds: this.props.worlds.split(",").map((w, i) => ({
+					downloadUrl: w,
 					name: `world-${i}`,
 					version: "1.0.0"
 				})),
