@@ -71,7 +71,11 @@ module.exports = class extends Generator {
 				dockerTag: "latest",
 				port: this.props.port,
 				serverName: this.props.serverName,
-				worlds: this.props.worlds.split(""),
+				worlds: this.props.worlds.map((w, i) => ({
+					url: w,
+					name: `world-${i}`,
+					version: "1.0.0"
+				})),
 				javaPlugins: this.props.javaPlugins.split("")
 			}
 		});
